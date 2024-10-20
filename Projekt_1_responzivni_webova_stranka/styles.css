@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:root {
+  --font-black: #000;
+  --font-white: #fff;
+  --link-light: #efa69d;
+  --link-dark: #e9877b;
+  --background-dark-gray: #33292a;
+  --background-brown: #644b4f;
+  --background-gray: #333333;
+  --background-light-gray: #f2f2f2;
+  --background-navigation: #3a2e2f;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.content-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 90px 0px;
+  }
+}
+
+/* NAVIGATION */
+.navigation-section {
+  background-color: var(--background-navigation);
+  height: 67px;
+  display: flex;
+}
+
+.navigation-list {
+  list-style: none;
+  display: none;
+  margin: 0 auto;
+}
+
+.navigation-icon-burger-menu {
+  color: var(--font-white);
+  cursor: pointer;
+  font-size: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 80%;
+    max-width: 1200px;
+    padding: 10px 0px;
+  }
+
+  .navigation-item a {
+    color: var(--font-white);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .navigation-icon-burger-menu {
+    display: none;
+  }
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-image: url(./images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-container {
+  width: 90%;
+  height: 780px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hero-text {
+  color: var(--font-white);
+  text-align: right;
+  font-size: 42px;
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    width: 80%;
+    max-width: 1200px;
+    height: 804px;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    font-size: 96px;
+    position: absolute;
+    bottom: 80px;
+  }
+}
+
+/* ABOUT US SECTION*/
+.about-us-img {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .about-us-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .about-us-text {
+    width: calc(100% / 2 - 20px);
+  }
+
+  .about-us-img {
+    width: calc(100% / 2 - 20px);
+    height: auto;
+    margin-top: 0px;
+  }
+}
+
+/* WHAT WE DO SECTION */
+.what-we-do-section {
+  background-color: var(--background-dark-gray);
+  color: var(--font-white);
+}
+
+.what-we-do-text {
+  text-align: center;
+}
+
+.what-we-do-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px 0px 30px 0px;
+  }
+}
+
+.what-we-do-icons-image img {
+  width: 80px;
+  height: 80px;
+}
+
+.what-we-do-icons-text {
+  font-size: 24px;
+}
+
+/* OUR TRIPS SECTION*/
+.our-trips-photo-1 {
+  background-image: url(./images/simon-english-48nerZQCHgo-unsplash.jpg);
+}
+.our-trips-photo-2 {
+  background-image: url(./images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg);
+}
+.our-trips-photo-3 {
+  background-image: url(./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg);
+}
+.our-trips-photo-4 {
+  background-image: url(./images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg);
+}
+.our-trips-photo-5 {
+  background-image: url(./images/patrick-szylar-45bM3XGqnDE-unsplash.jpg);
+}
+.our-trips-photo-6 {
+  background-image: url(./images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg);
+}
+.our-trips-photo-7 {
+  background-image: url(./images/julian-bialowas-ilkTnuMunP8-unsplash.jpg);
+}
+.our-trips-photo-8 {
+  background-image: url(./images/matej-drha-rbDzMcJsBkY-unsplash.jpg);
+}
+
+.our-trips-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.our-trips-gallery-item {
+  height: 222px;
+  width: 100%;
+  flex-shrink: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.our-trips-galery-item-text {
+  background-color: var(--background-light-gray);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 80px;
+  size: 24px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .our-trips-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .our-trips-galery-item-text {
+    height: 222px;
+    font-size: 32px;
+  }
+}
+
+/* WHERE DO YOU WANT TO GO SECTION*/
+.where-do-you-want-to-go-section {
+  background-color: var(--background-brown);
+  color: var(--font-white);
+}
+
+.where-do-you-want-to-go-text-right-block p {
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--background-light-gray);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--font-black);
+  font-weight: 700;
+  margin: 30px 0px 10px 0px;
+}
+
+@media (min-width: 768px) {
+  .where-do-you-want-to-go-container {
+    display: flex;
+    gap: 40px;
+    padding: 100px 0px;
+  }
+
+  .where-do-you-want-to-go-text-left-block {
+    flex: 1;
+  }
+  .where-do-you-want-to-go-text-right-block {
+    flex: 2;
+  }
+}
+
+/* REVIEWS SECTION*/
+.reviews-container {
+  text-align: center;
+}
+
+.reviews-card img {
+  border-radius: 50%;
+  width: 111px;
+  height: 111px;
+  object-fit: cover;
+  margin: 40px 0px 0px 0px;
+}
+
+.reviews-card p {
+  margin: 30px 0px;
+}
+
+@media (min-width: 768px) {
+  .reviews-text {
+    max-width: calc(100% / 3);
+    margin: 0 auto;
+  }
+
+  .reviews-cards-container {
+    display: flex;
+    gap: 80px;
+  }
+}
+
+/* GALERY SECTION */
+.galery-photo-1 {
+  background-image: url(./images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+.galery-photo-2 {
+  background-image: url(./images/omer-salom-LoijtQXXNhs-unsplash.jpg);
+}
+.galery-photo-3 {
+  background-image: url(./images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg);
+}
+.galery-photo-4 {
+  background-image: url(./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg);
+}
+
+.gallery-item {
+  height: 260px;
+  width: 100%;
+  flex-shrink: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .gallery-item {
+    height: 420px;
+    width: 50%;
+  }
+
+  .galery-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* FOOTER */
+.footer-section {
+  background-color: var(--background-gray);
+}
+
+.footer-section-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.footer-section-container h6 {
+  margin: 10px;
+}
+
+.footer-contact-link {
+  color: var(--link-dark);
+}
+
+.footer-contact-link:hover {
+  color: var(--link-light);
+}
+
+.footer-copyright {
+  color: var(--font-white);
+}
